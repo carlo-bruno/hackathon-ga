@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
+
 import Money from "./Components/Money"; 
 import Status from "./Components/Status"; 
 import ProductShow from "./Pages/ProductShow"; 
+
+import { Route, Link } from 'react-router-dom';
+import Home from './Pages/Home';
+
 import './App.css';
 
+import { productData } from './Data/Products.js';
+import Card from './Components/Card';
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: productData,
+      money: 50000
+    };
+  }
+
   render() {
     return (
       <div className='App'>
@@ -13,11 +29,11 @@ class App extends Component {
           <input type='text' placeholder='search' />
         </header> 
         <main className='Content'>
-          {
-            // Card
-            // Card
-            // Card
-          }
+          <Route
+            exact
+            path='/'
+            render={() => <Home products={this.state.products} />}
+          />
         </main>
       </div>
     );
