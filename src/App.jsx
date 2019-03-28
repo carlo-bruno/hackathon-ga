@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Money from "./Components/Money"; 
-import Status from "./Components/Status"; 
+import Status from "./Pages/Status"; 
 import ProductShow from "./Pages/ProductShow"; 
 
 import { Route, Link } from 'react-router-dom';
