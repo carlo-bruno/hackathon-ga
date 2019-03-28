@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
+import Home from './Pages/Home';
+
 import './App.css';
 
 import { productData } from './Data/Products.js';
@@ -14,10 +17,6 @@ class App extends Component {
   }
 
   render() {
-    let cards = this.state.products.map((product, i) => {
-      return <Card key={i} product={product} />;
-    });
-
     return (
       <div className='App'>
         <header>
@@ -25,7 +24,13 @@ class App extends Component {
           <input type='text' placeholder='search' />
         </header>
 
-        <main className='Content'>{cards}</main>
+        <main className='Content'>
+          <Route
+            exact
+            path='/'
+            render={() => <Home products={this.state.products} />}
+          />
+        </main>
       </div>
     );
   }
