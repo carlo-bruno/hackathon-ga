@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
+import Home from './Pages/Home';
+
 import './App.css';
 
+import { productData } from './Data/Products.js';
+import Card from './Components/Card';
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: productData,
+      money: 50000
+    };
+  }
+
   render() {
     return (
       <div className='App'>
@@ -11,11 +25,11 @@ class App extends Component {
         </header>
 
         <main className='Content'>
-          {
-            // Card
-            // Card
-            // Card
-          }
+          <Route
+            exact
+            path='/'
+            render={() => <Home products={this.state.products} />}
+          />
         </main>
       </div>
     );
