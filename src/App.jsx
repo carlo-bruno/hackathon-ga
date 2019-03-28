@@ -6,6 +6,7 @@ import ProductShow from './Pages/ProductShow';
 // import Purchase from './Pages/Purchase';
 import Search from './Pages/Search';
 
+
 import { Route, Link } from 'react-router-dom';
 import Home from './Pages/Home';
 
@@ -31,6 +32,7 @@ class App extends Component {
       return { searchResults }
     })
   }
+
 
   render() {
 
