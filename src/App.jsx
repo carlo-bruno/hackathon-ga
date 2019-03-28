@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Money from "./Components/Money"; 
+import Status from "./Components/Status"; 
+import ProductShow from "./Pages/ProductShow"; 
 import './App.css';
 
 class App extends Component {
@@ -8,8 +11,7 @@ class App extends Component {
         <header>
           <h1>KITT</h1>
           <input type='text' placeholder='search' />
-        </header>
-
+        </header> 
         <main className='Content'>
           {
             // Card
