@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Purchase from "./Components/Purchase"
 import Money from "./Components/Money"; 
 import Status from "./Pages/Status"; 
 import ProductShow from "./Pages/ProductShow"; 
@@ -20,6 +21,8 @@ class App extends Component {
       money: 50000
     };
   }
+
+
 
   render() {
     return (
