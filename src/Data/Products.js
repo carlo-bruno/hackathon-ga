@@ -97,12 +97,60 @@ export const productData = [
     wishList: false,
     id: 11 
   },{
+    name: "Waterproof Suit Mark I",
+    price: '90,000 ',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Scaphandre_Carmagnolle_MnM_Paris.jpg/170px-Scaphandre_Carmagnolle_MnM_Paris.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 12 
+  },{
+    name: 'Waterproof Suit Mark II',
+    price: '80,000 ',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Deep_Sea_Diving_Suit.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 13 
+  },{
+    name: 'Waterproof Suit Mark III',
+    price: '110,000 ',
+    img: 'https://images.ecosia.org/zWEpgCI78KBlZdEfX_gsbX1CCqA=/0x390/smart/https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2Fc6%2F72%2Fad%2Fc672add344a539cd3ee79c3076107981--diving-suit-vbs-.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 14 
+  },{
+    name: 'Waterproof Suit Mark IV',
+    price: "200,000",
+    img: 'https://images.ecosia.org/lkcPrXjSukiaq_uMzPvQ24EpASU=/0x390/smart/https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2F27%2Fe6%2Fb1%2F27e6b10748269bb1d07433bb6b911fa1.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 15 
+  },{
+    name: 'Budget Water Suit Mark I',
+    price: '20,000 ',
+    img: 'http://cyberneticzoo.com/wp-content/uploads/2015/01/newtsuit-x640-640x1068.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 16 
+  },{
+    name: 'Budget Water Suit Mark II',
+    price: '25,000 ',
+    img: 'https://adventuretampa.com/at/wp-content/uploads/2018/10/Deep-Sea-Suit.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 17 
+  },{
     name: 'Backpack',
     price: '10,000 ',
     img: 'http://www.tuvie.com/wp-content/uploads/mountain-climber-shield-futuristic-protection1.jpg',
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 12 
+    id: 18 
   }
 ];

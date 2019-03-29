@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Money from './Components/Money';
 import KittDude from './Components/KittDude';
 
+
+import LoadingPage from "./Pages/LoadingPage"; 
 import Home from './Pages/Home';
 import Search from './Pages/Search';
 
@@ -24,8 +26,17 @@ class App extends Component {
       money: 5000000,
       searchResults: [],
       current: {},
-      modal: 'none'
+      modal: 'none',
+      loading: true, 
     };
+  }
+  
+  componentDidMount(){
+    console.log("this is running")
+    setTimeout(() => {
+      this.setState({
+        loading:false
+      })}, 4000 )
   }
 
   handleSearch = (e) => {
@@ -55,6 +66,8 @@ class App extends Component {
       modal: 'none'
     })
   }
+ 
+
 
   handlePurchaseButton = (e) => {
     e.stopPropagation();
@@ -71,8 +84,15 @@ class App extends Component {
   }
 
   render() {
-    let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
 
+ // if (this.state.loading){
+    //   return(
+    //     <LoadingPage  />
+    //     )
+    //   } else {
+      // all other components 
+    //   }
+    let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
     if (this.state.searchResults.length > 0) {
       content = <Search searchResults={this.state.searchResults} />
     }
@@ -111,3 +131,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+
