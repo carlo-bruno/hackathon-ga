@@ -44,12 +44,20 @@ class App extends Component {
     })
   }
 
+  handleCloseProduct = () => {
+    this.setState({
+      current: {},
+      showing: 'home'
+    })
+  }
+
   render() {
     let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
 
     if (this.state.searchResults.length > 0) {
       content = <Search searchResults={this.state.searchResults} />
     }
+
 
     return (
       <div className='App'>
@@ -62,6 +70,9 @@ class App extends Component {
 
           {content}
 
+          {this.state.current &&
+            <ProductShow product={this.state.current} />
+          }
         </main>
       </div>
     );
