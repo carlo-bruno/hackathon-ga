@@ -32,6 +32,8 @@ const ProductShow = (props) => {
       <div className="outer" onClick={(e) => props.handleCloseModal(e)}></div>
 
       <section className="inner">
+        <div className="close" onClick={(e) => props.handleCloseModal(e)}>X</div>
+
         <div className="image-box">
           <img src={img} alt={name} />
         </div>

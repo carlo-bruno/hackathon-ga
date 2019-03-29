@@ -20,6 +20,7 @@ class Status extends Component {
         <div className="outer" onClick={(e) => this.props.handleCloseModal(e)}></div>
 
         <div className="inner">
+          <div className="close" onClick={(e) => this.props.handleCloseModal(e)}>X</div>
           <h1> Your Item should arive within {this.state.time} seconds on Drone {droneId} </h1>
           {/* <button onClick={(e) => this.props.handleCloseModal(e)}> OK </button> */}
         </div>

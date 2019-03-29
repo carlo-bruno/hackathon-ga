@@ -8,6 +8,8 @@ const Purchase = (props) => {
          <div className="outer" onClick={(e) => props.handleCloseModal(e)}></div>
 
          <div className="inner">
+            <div className="close" onClick={(e) => props.handleCloseModal(e)}>X</div>
+
             <h2> <img src={etherium} alt="etherium" /> {props.product.price} will be deducted from your account</h2>
             <h3>Do you wish to continue?</h3>
             <button className="confirm-button"
