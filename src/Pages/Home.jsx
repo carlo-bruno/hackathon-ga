@@ -5,7 +5,12 @@ const Home = (props) => {
   let cards = props.products.map((product, i) => {
     return <Card key={i} product={product} />;
   });
-  return <div>{cards}</div>;
+  return (
+    <div className="Home">
+      <h2>Home</h2>
+      {cards}
+    </div>
+  )
 };
 
 export default Home;
