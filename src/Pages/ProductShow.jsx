@@ -1,4 +1,6 @@
 import React from "react";
+
+import etherium from '../images/etherium.png'
 import pylon1 from '../images/1-Pylon.png';
 import pylon2 from '../images/2-Pylon.png';
 import pylon3 from '../images/3-Pylon.png';
@@ -40,14 +42,14 @@ const ProductShow = (props) => {
 
         <div className="info-box">
           <h2>{name}</h2>
-          <h2>$ {price}</h2>
+          <h2 className="price"><img src={etherium} alt="etherium" />{price}</h2>
           <div className="pylon">Rating: {pylons}</div>
           <h4 className="description">{description}</h4>
           <div className="button-group">
-            <button className="purchase-btn"
+            <button className="btn purchase-btn"
               onClick={(e) => props.handlePurchaseButton(e)}
             >Purchase</button>
-            <button className="purchase-btn">
+            <button className="btn cart-btn">
               Add to Cart
           </button>
           </div>

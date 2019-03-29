@@ -1,5 +1,5 @@
 import React from 'react';
-import etherium from '../images/etherium.png' 
+import etherium from '../images/etherium.png'
 import Carousel from '../Components/Carousel';
 // import HelloEllon from "../Components/HelloEllon"
 
@@ -19,7 +19,6 @@ const Home = (props) => {
 
   return (
     <div className="Home">
-      <h4> Welcome e-Lon </h4>
       <div>
         <h2>Featured</h2>
         <Carousel products={feature} handleShowProduct={props.handleShowProduct} />

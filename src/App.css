@@ -6,6 +6,7 @@ html {
   position: relative;
   width: 100vw;
   overflow-x: hidden;
+  background-image: url('../src/images/light_honeycomb.png')
 }
 
 body{
@@ -25,7 +26,8 @@ body{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 20vh;
+  height: 12vh;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -35,10 +37,16 @@ body{
 
 .Header .search {
   width: 500px;
+  height: 41px;
   padding: 5px 10px;
   font-size: 1.1rem;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
+.welcome {
+  margin: 0;
+}
 
 /* Pages ---------------------------------------------------- */
 /* Home Page ------------------------------------------------ */
@@ -139,6 +147,17 @@ body{
   margin-top: 0;
 }
 
+.ProductShow .price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.ProductShow .price img {
+  height: 35px;
+  margin-right: 10px;
+}
+
 .ProductShow .info-box .description {
   padding: 0 30px;
 }
@@ -152,6 +171,7 @@ body{
 .ProductShow .pylon img {
   width: 90px;
   height: auto;
+  margin-left: 10px;
 }
 
 .ProductShow .button-group {
@@ -162,7 +182,7 @@ body{
 }
 
 
-.ProductShow .purchase-btn {
+.ProductShow .btn {
   border: 1px solid black;
   box-shadow: 0 4px 0 black;
   border-radius: 5px;
@@ -171,6 +191,10 @@ body{
   width: 140px;
   font-size: 1.2rem;
   outline: none;
+}
+
+.ProductShow .cart-btn {
+  background-color: #dddddd;
 }
 
 .ProductShow .purchase-btn:hover {
@@ -203,7 +227,7 @@ body{
   border: 1px solid black;
   box-shadow: 0 4px 0 black;
   border-radius: 5px;
-  background-color: rgb(55, 206, 55);
+  background-color: #FFF200;
   padding: 10px 20px;
   font-size: 1.3rem;
   font-weight: 600;
@@ -211,11 +235,11 @@ body{
 }
 
 .Purchase .confirm-button:hover {
-  background-color: rgb(41, 163, 41);
+  background-color: #e6da00;
 }
 
 .Purchase .confirm-button:active {
-  background-color: rgb(38, 128, 38);
+  background-color: #c4ba00;
   box-shadow: 0 2px 0 black;
   transform: translateY(2px)
 }
@@ -327,11 +351,29 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.Card .name {
+  margin: 0 0 10px;
 }
 
 .Card .card-img img {
   max-width: 100px;
   max-height: 150px;
+}
+
+.Card .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Card .price img {
+  height: 25px;
+  margin-right: 10px;
 }
 
 /* Money Component ------------------------------------------ */
@@ -343,17 +385,23 @@ body{
   text-align: right;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
 }
-
-
 
 .Money img {
   height: 25px;
-  text-align: center;
+  margin-right: 5px;
 }
 
-.Money h3 h2 {
+.Money h3,
+.Money h4 {
   margin: 0;
+}
+
+.Money h3 {
+  display: flex;
+  align-items: center;
 }
 
 /* LoadingPage ---------------------------------------------- */

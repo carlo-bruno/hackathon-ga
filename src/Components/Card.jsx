@@ -1,5 +1,5 @@
 import React from 'react';
-import etherium from '../images/etherium.png' 
+import etherium from '../images/etherium.png'
 
 
 const Card = (props) => {
@@ -13,7 +13,7 @@ const Card = (props) => {
       </div>
       <div className="card-info">
         <h3 className="name">{props.product.name}</h3>
-        <h3 className="price">{props.product.price}</h3> <img className="homeMoneyProduct" src={etherium} alt="etherium" />
+        <h3 className="price"><img src={etherium} alt="etherium" />{props.product.price}</h3>
       </div>
     </div>
   );

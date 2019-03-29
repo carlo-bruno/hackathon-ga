@@ -6,10 +6,10 @@ const Money = (props) => {
    let money = props.money.toLocaleString();
    return (
       <div className="Money">
-         <img src={etherium} alt="etherium" />
+
          <h4>Balance: </h4>
-         <h3>{money}</h3>
-         </div>
+         <h3><img src={etherium} alt="etherium" />{money}</h3>
+      </div>
    )
 }
 

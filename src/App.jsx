@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import etherium from './images/etherium.png' 
+// import etherium from './images/etherium.png'
 // import { Route, Link } from 'react-router-dom';
 
 import Money from './Components/Money';
-import KittDude from './Components/KittDude';
+// import KittDude from './Components/KittDude';
 
 import LoadingPage from "./Pages/LoadingPage";
 import Home from './Pages/Home';
@@ -97,6 +97,7 @@ class App extends Component {
           <input className="search" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
           <Money money={this.state.money} />
         </header>
+        <h4 className="welcome"> Welcome Elon M </h4>
 
         <main className='Content'>
           {/* <KittDude /> */}
@@ -109,7 +110,7 @@ class App extends Component {
 
           {this.state.modal === "showProduct" &&
             <ProductShow product={this.state.current} handleCloseModal={this.handleCloseModal}
-              
+
               handlePurchaseButton={this.handlePurchaseButton} />
           }
 
