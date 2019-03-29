@@ -119,9 +119,9 @@ export const productData = [
     rating: 3,
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },{
-    name: "Waterproof Suit Mark I",
-    price: '90,000 ',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Scaphandre_Carmagnolle_MnM_Paris.jpg/170px-Scaphandre_Carmagnolle_MnM_Paris.jpg',
+    name: "Balenciaga Waterproof suit",
+    price: '80000',
+    img: 'https://sep.yimg.com/ca/I/brandsonsale-store_2271_516204925',
     feature: true,
     purchaseBefore: false,
     wishList: false,
@@ -130,9 +130,9 @@ export const productData = [
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     size: "Small, Medium, Large" 
   },{
-    name: 'Waterproof Suit Mark II',
-    price: '80,000 ',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Deep_Sea_Diving_Suit.jpg',
+    name: 'Black and yellow waterproof suit',
+    price: '41300',
+    img: 'http://cyberneticzoo.com/wp-content/uploads/2015/01/newtsuit-x640-640x1068.jpg',
     feature: true,
     purchaseBefore: false,
     wishList: false,
@@ -141,9 +141,9 @@ export const productData = [
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     size:"Small, Medium, Large" 
   },{
-    name: 'Waterproof Suit Mark III',
-    price: '110,000 ',
-    img: 'https://images.ecosia.org/zWEpgCI78KBlZdEfX_gsbX1CCqA=/0x390/smart/https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2Fc6%2F72%2Fad%2Fc672add344a539cd3ee79c3076107981--diving-suit-vbs-.jpg',
+    name: 'Plus size waterproof suit',
+    price: '33000',
+    img: 'https://images.ecosia.org/lkcPrXjSukiaq_uMzPvQ24EpASU=/0x390/smart/https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2F27%2Fe6%2Fb1%2F27e6b10748269bb1d07433bb6b911fa1.jpg',
     feature: true,
     purchaseBefore: false,
     wishList: false,
@@ -153,7 +153,7 @@ export const productData = [
     size:"Small, Medium, Large" 
   },{
     name: 'Waterproof Suit Mark IV',
-    price: "200,000",
+    price: "200000",
     img: 'https://images.ecosia.org/lkcPrXjSukiaq_uMzPvQ24EpASU=/0x390/smart/https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2F27%2Fe6%2Fb1%2F27e6b10748269bb1d07433bb6b911fa1.jpg',
     feature: true,
     purchaseBefore: false,
@@ -163,8 +163,8 @@ export const productData = [
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     size:"Small, Medium, Large"  
   },{
-    name: 'OG Wet Suit',
-    price: '53,000 ',
+    name: 'OG Waterproof Suit',
+    price: '53000 ',
     img: 'https://i.pinimg.com/736x/41/5d/46/415d46963222f2e74f1b7fc2d51d982a--close-up-military-robot.jpg',
     feature: true,
     purchaseBefore: false,
@@ -174,8 +174,8 @@ export const productData = [
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     size:"Small, Medium, Large"  
   },{
-    name: 'It’s Lit wetsuit',
-    price: '25,000 ',
+    name: "Lit Waterproof Suit",
+    price: '25000 ',
     img: 'https://adventuretampa.com/at/wp-content/uploads/2018/10/Deep-Sea-Suit.jpg',
     feature: true,
     purchaseBefore: false,
@@ -186,7 +186,7 @@ export const productData = [
     size:"Small, Medium, Large" 
   },{
     name: 'Backpack',
-    price: '10,000 ',
+    price: '10000 ',
     img: 'http://www.tuvie.com/wp-content/uploads/mountain-climber-shield-futuristic-protection1.jpg',
     feature: true,
     purchaseBefore: false,
@@ -197,7 +197,7 @@ export const productData = [
     size:"Small, Medium, Large"  
   },{
     name: 'Home Decoration - Sculpture',
-    price: '24,500',
+    price: '24500',
     img: 'https://www.artsandcollections.com/wp-content/uploads/2019/02/AIDAN_MELLER_WIP-3-copy-1280x1917.jpg',
     feature: true,
     purchaseBefore: true,
@@ -208,7 +208,7 @@ export const productData = [
  
   },{
     name: 'Stationary tool',
-    price: '34,000 ',
+    price: '34000 ',
     img: ' https://totemmaker.net/wp-content/uploads/2018/02/Robotic-arm-1x1.jpg',
     feature: false,
     purchaseBefore: false,
@@ -219,7 +219,7 @@ export const productData = [
 
   },{
     name: 'Vacuum',
-    price: '10,400',
+    price: '10400',
     img: 'https://images-na.ssl-images-amazon.com/images/I/810SWbINX0L._SX425_.jpg',
     feature: true,
     purchaseBefore: true,
@@ -229,7 +229,7 @@ export const productData = [
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },{
     name: 'Rainbow Laser Blaster',
-    price: ' 26,000',
+    price: ' 26000',
     img: 'https://t5.rbxcdn.com/138c432763a0dd9121951b0a021d2094',
     feature: true,
     purchaseBefore: false,
