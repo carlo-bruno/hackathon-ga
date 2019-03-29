@@ -7,7 +7,9 @@ export const productData = [
     purchaseBefore: false,
     wishList: false,
     rating:"",
-    id: 1
+    id: 1,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     name: 'Tesla Battery',
@@ -17,7 +19,9 @@ export const productData = [
     purchaseBefore: true,
     wishList: false,
     rating:"",
-    id: 2
+    id: 2,
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Underwater Scooter',
@@ -26,7 +30,9 @@ export const productData = [
     feature: false,
     purchaseBefore: false,
     wishList: true,
-    id: 3
+    id: 3,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Mother-in-law board',
@@ -35,7 +41,9 @@ export const productData = [
     feature: false,
     purchaseBefore: false,
     wishList: false,
-    id: 4
+    id: 4,
+    rating: 1,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Hawaiian Vinyl Wrap',
@@ -44,7 +52,9 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 5
+    id: 5,
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Chrome Vinyl Wrap',
@@ -53,7 +63,9 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 6
+    id: 6,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Laser speargun',
@@ -61,8 +73,10 @@ export const productData = [
     img: 'https://ae01.alicdn.com/kf/HTB1lxDQXjDuK1RjSszdq6xGLpXa3/Outdoor-Laser-Shooting-Fish-Slingshot-Shooting-Speargun-Multifunction-Instinct-Shooter-Shooting-Slingshot-Hunting-Accessories.jpg_640x640.jpg',
     feature: false,
     purchaseBefore: false,
-    wishList: false,
-    id: 7
+    wishList: true,
+    id: 7,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Robocalls',
@@ -71,7 +85,9 @@ export const productData = [
     feature: false,
     purchaseBefore: false,
     wishList: true,
-    id: 8
+    id: 8,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     name: '3D Printer',
     price: '3000',
@@ -79,7 +95,9 @@ export const productData = [
     feature: true,
     purchaseBefore: true,
     wishList: false,
-    id: 9 
+    id: 9, 
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },{
     name: 'First Aid Kit',
     price: '3000',
@@ -87,7 +105,9 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 10 
+    id: 10,
+    rating: 4 ,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },{
     name: 'Primer',
     price: '800',
@@ -95,7 +115,9 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 11 
+    id: 11,
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },{
     name: "Waterproof Suit Mark I",
     price: '90,000 ',
@@ -103,7 +125,10 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 12 
+    id: 12,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size: "Small, Medium, Large" 
   },{
     name: 'Waterproof Suit Mark II',
     price: '80,000 ',
@@ -111,7 +136,10 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 13 
+    id: 13,
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size:"Small, Medium, Large" 
   },{
     name: 'Waterproof Suit Mark III',
     price: '110,000 ',
@@ -119,7 +147,10 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 14 
+    id: 14,
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size:"Small, Medium, Large" 
   },{
     name: 'Waterproof Suit Mark IV',
     price: "200,000",
@@ -127,23 +158,32 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 15 
+    id: 15,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size:"Small, Medium, Large"  
   },{
-    name: 'Budget Water Suit Mark I',
-    price: '20,000 ',
-    img: 'http://cyberneticzoo.com/wp-content/uploads/2015/01/newtsuit-x640-640x1068.jpg',
+    name: 'OG Wet Suit',
+    price: '53,000 ',
+    img: 'https://i.pinimg.com/736x/41/5d/46/415d46963222f2e74f1b7fc2d51d982a--close-up-military-robot.jpg',
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 16 
+    id: 16,
+    rating: 2,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size:"Small, Medium, Large"  
   },{
-    name: 'Budget Water Suit Mark II',
+    name: 'It’s Lit wetsuit',
     price: '25,000 ',
     img: 'https://adventuretampa.com/at/wp-content/uploads/2018/10/Deep-Sea-Suit.jpg',
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 17 
+    id: 17,
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size:"Small, Medium, Large" 
   },{
     name: 'Backpack',
     price: '10,000 ',
@@ -151,6 +191,84 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 18 
+    id: 18,
+    rating: 2,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size:"Small, Medium, Large"  
+  },{
+    name: 'Home Decoration - Sculpture',
+    price: '24,500',
+    img: 'https://www.artsandcollections.com/wp-content/uploads/2019/02/AIDAN_MELLER_WIP-3-copy-1280x1917.jpg',
+    feature: true,
+    purchaseBefore: true,
+    wishList: false,
+    id:19, 
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+ 
+  },{
+    name: 'Stationary tool',
+    price: '34,000 ',
+    img: ' https://totemmaker.net/wp-content/uploads/2018/02/Robotic-arm-1x1.jpg',
+    feature: false,
+    purchaseBefore: false,
+    wishList: true,
+    id:20, 
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  },{
+    name: 'Vacuum',
+    price: '10,400',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/810SWbINX0L._SX425_.jpg',
+    feature: true,
+    purchaseBefore: true,
+    wishList: false,
+    id:21, 
+    rating: 3,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },{
+    name: 'Rainbow Laser Blaster',
+    price: ' 26,000',
+    img: 'https://t5.rbxcdn.com/138c432763a0dd9121951b0a021d2094',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id:22, 
+    rating: 2,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  },{
+    name: 'External Battery',
+    price: '1000',
+    img: 'https://ae01.alicdn.com/kf/HTB184wNfMvD8KJjy0Flq6ygBFXae/20100mAh-Power-Bank-External-Battery-Charger-Mobile-Phone-Battery-Charger-with-Dual-USB-LCD-Flashlight-for.jpg',
+    feature: false,
+    purchaseBefore: false,
+    wishList: true,
+    id:22, 
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  },{
+    name: 'Juul',
+    price: '700',
+    img: 'https://i1.wp.com/vape-smart.com/wp-content/uploads/2016/08/JUUL-eCig.jpg?fit=600%2C600&ssl=1',
+    feature: false,
+    purchaseBefore: true,
+    wishList: false,
+    id:22, 
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  },{
+    name: 'Juul Pods - Fruit Medley ',
+    price: '350',
+    img: 'https://products2.imgix.drizly.com/ci-juul-fruit-mediey-pods-4766b31cdba3a768.jpeg?auto=format%2Ccompress&fm=jpeg&q=20',
+    feature: false,
+    purchaseBefore: true,
+    wishList: false,
+    id:22, 
+    rating: 4,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   }
 ];
