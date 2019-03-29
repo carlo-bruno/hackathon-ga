@@ -49,7 +49,7 @@ class App extends Component {
           <Route exact path='/'
             render={() => <Home products={this.state.products} />}
           />
-
+          
         </main>
       </div>
     );
