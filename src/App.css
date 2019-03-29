@@ -272,6 +272,22 @@ body{
   margin: 0;
 }
 
+/* LoadingPage ---------------------------------------------- */
+.LoadingPage {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #ffffff;
+}
+
+.load-images {
+  position: relative;
+  width: 20em;
+  margin: 80px auto 0;
+}
 
 .loaderBox {
   margin: 0 auto;
@@ -282,6 +298,12 @@ body{
   height: 20em;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2.5s linear infinite;
+}
+
+.load-images .KittDude {
+  position: absolute;
+  top: 15%;
+  left: 21%;
 }
 
 /* Safari */
