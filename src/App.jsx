@@ -27,7 +27,7 @@ class App extends Component {
       searchResults: [],
       current: {},
       modal: 'none',
-      loading: false, /*change this on deploy */
+      loading: true, /*change this on deploy */
     };
   }
 
