@@ -13,10 +13,14 @@ const Home = (props) => {
     </a>
       <h2>Home</h2>
         <div className="Feature"> 
-        {cards}
+          {cards}
         </div>
-        <div className="WishList"></div>
-        <div className="PurchaseBefore"></div>
+        <div className="WishList"> 
+        {/* stuff */}
+        </div>
+        <div className="PurchaseBefore">
+        {/* stuff */}
+        </div>
     </div>
   )
 };
