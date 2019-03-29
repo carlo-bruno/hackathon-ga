@@ -5,9 +5,10 @@ import Money from './Components/Money';
 import ProductShow from './Pages/ProductShow';
 // import Purchase from './Pages/Purchase';
 import Search from './Pages/Search';
+import logo from "./images/kitt-logo-2.png"
 
 
-import { Route, Link } from 'react-router-dom';
+// import { Route, Link } from 'react-router-dom';
 import Home from './Pages/Home';
 
 import './App.css';
@@ -21,7 +22,8 @@ class App extends Component {
       products: productData,
       money: 50000,
       searchResults: [],
-      current: {}
+      current: {},
+      modal: 'none'
     };
   }
 
@@ -47,7 +49,7 @@ class App extends Component {
   handleCloseProduct = () => {
     this.setState({
       current: {},
-      showing: 'home'
+      modal: 'none'
     })
   }
 
@@ -61,9 +63,10 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <header>
-          {/* <h1>KITT</h1> */}
-          <input className="SearchBox" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
+        <header className="Header">
+          <img className="kitt-logo" src={logo} alt="Kit Logo"></img>
+          <input className="search" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
+          <Money />
         </header>
 
         <main className='Content'>
@@ -73,6 +76,7 @@ class App extends Component {
           {this.state.current &&
             <ProductShow product={this.state.current} />
           }
+
         </main>
       </div>
     );

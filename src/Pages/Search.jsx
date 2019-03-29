@@ -7,8 +7,12 @@ const Search = (props) => {
   });
   return (
     <div className="Search">
-      <h2>Search</h2>
-      {cards}
+
+      <h3>Search</h3>
+      <div className="search-collection">
+        {cards}
+      </div>
+
     </div>
   )
 }

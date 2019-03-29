@@ -1,22 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
 
 
-const ProductShow = (props) => {
-   let { name, price, img } = props.product;
+class ProductShow extends Component {
+   constructor(props) {
+      super(props)
 
-   return (
-      <div className="ProductShow">
+      this.state = {
+         visible: false
+      }
+   }
 
-         <div className="image-box">
-            <img src={img} alt={name} />
+
+   render() {
+      let { name, price, img } = this.props.product;
+
+      return (
+         <div className="ProductShow hidden">
+
+            <div className="inner">
+               <div className="image-box">
+                  <img src={img} alt={name} />
+               </div>
+
+               <div className="info-box">
+                  <h3>{name}</h3>
+                  <h3>{price}</h3>
+               </div>
+               <button>Purchase</button>
+            </div>
+
          </div>
-         <div className="info-box">
-            <h3>{name}</h3>
-            <h3>{price}</h3>
-         </div>
-      </div>
-   )
+      )
+   }
 }
-
 
 export default ProductShow; 
