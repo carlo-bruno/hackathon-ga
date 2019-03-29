@@ -81,7 +81,16 @@ body{
   position: relative;
   right: 30%;
   bottom: 10%; 
+  border: 0px solid #ffffff;
+  cursor: pointer; 
 }
+
+.KittLogo:hover{
+  box-shadow: 0 0 8px red;
+}
+
+
+
 
 .SearchBox{
   width: 50%; 

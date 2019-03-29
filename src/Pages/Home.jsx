@@ -8,7 +8,9 @@ const Home = (props) => {
   });
   return (
     <div className="Home">
-    <img className="KittLogo" src={logo} alt="Kit Logo"></img>
+    <a href= "/">
+      <img className="KittLogo" src={logo} alt="Kit Logo"></img>
+    </a>
       <h2>Home</h2>
         <div className="Feature"> 
         {cards}

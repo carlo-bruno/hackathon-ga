@@ -6,6 +6,7 @@ export const productData = [
     feature:false,
     purchaseBefore: false,
     wishList: false,
+    rating:"",
     id: 1
   },
   {
@@ -15,6 +16,7 @@ export const productData = [
     feature:true,
     purchaseBefore: false,
     wishList: false,
+    rating:"",
     id: 2
   },
   {
@@ -78,5 +80,29 @@ export const productData = [
     purchaseBefore: false,
     wishList: false,
     id: 9 
-  },
+  },{
+    name: 'First Aid Kit',
+    price: '3000',
+    img: 'https://i.ibb.co/T45mXS8/first-aid-kit.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 9 
+  },{
+    name: 'Primer',
+    price: '800',
+    img: 'https://www.cartalk.com/sites/default/files/Blazer%20Rustoleum%20Rusty%20Metal%20primer.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 9 
+  },{
+    name: 'Backpack',
+    price: '10,000 ',
+    img: 'http://www.tuvie.com/wp-content/uploads/mountain-climber-shield-futuristic-protection1.jpg',
+    feature: true,
+    purchaseBefore: false,
+    wishList: false,
+    id: 9 
+  }
 ];
