@@ -42,11 +42,13 @@ class App extends Component {
 
   handleShowProduct = (product) => {
     this.setState({
-      current: product
+      current: product,
+      modal: 'showProduct'
     })
   }
 
-  handleCloseProduct = () => {
+  handleCloseProduct = (e) => {
+    e.stopPropagation()
     this.setState({
       current: {},
       modal: 'none'
@@ -73,8 +75,8 @@ class App extends Component {
 
           {content}
 
-          {this.state.current &&
-            <ProductShow product={this.state.current} />
+          {this.state.modal === "showProduct" &&
+            <ProductShow product={this.state.current} handleCloseProduct={this.handleCloseProduct} />
           }
 
         </main>
