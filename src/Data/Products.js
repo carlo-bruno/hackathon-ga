@@ -3,7 +3,7 @@ export const productData = [
     name: 'iPhone 70 - Relics',
     price: '2000',
     img: 'https://i.ibb.co/PDLfkjt/fluid-625x625.png',
-    feature:false,
+    feature: false,
     purchaseBefore: false,
     wishList: false,
     rating:"",
@@ -13,8 +13,8 @@ export const productData = [
     name: 'Tesla Battery',
     price: '3000',
     img: 'https://cdns.radioflyer.com/media/catalog/product/cache/1/image/453x418/9df78eab33525d08d6e5fb8d27136e95/m/i/mini-tesla-model-s-for-kids-inset-premium-battery-model-910.jpg',
-    feature:true,
-    purchaseBefore: false,
+    feature: true,
+    purchaseBefore: true,
     wishList: false,
     rating:"",
     id: 2
@@ -23,9 +23,9 @@ export const productData = [
     name: 'Underwater Scooter',
     price: '1500',
     img: 'https://www.scuba.com/images/scooters/031571_big.jpg',
-    feature:false,
+    feature: false,
     purchaseBefore: false,
-    wishList: false,
+    wishList: true,
     id: 3
   },
   {
@@ -34,7 +34,7 @@ export const productData = [
     img: 'https://images-na.ssl-images-amazon.com/images/I/91zSu44%2B34L._SL1500_.jpg',
     feature: false,
     purchaseBefore: false,
-    wishList: false, 
+    wishList: false,
     id: 4
   },
   {
@@ -70,14 +70,14 @@ export const productData = [
     img: 'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492177663/articles/2015/08/19/south-carolina-s-coming-robocall-apocalypse/150818-woodruff-robocalls-tease_r4dfkp',
     feature: false,
     purchaseBefore: false,
-    wishList: false,
+    wishList: true,
     id: 8
   }, {
     name: '3D Printer',
     price: '3000',
     img: 'https://cdn.shopify.com/s/files/1/0180/7671/products/tiertime-up300_redhood_2000x.png?v=1540451813',
     feature: true,
-    purchaseBefore: false,
+    purchaseBefore: true,
     wishList: false,
     id: 9 
   },{
@@ -87,7 +87,7 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 9 
+    id: 10 
   },{
     name: 'Primer',
     price: '800',
@@ -95,7 +95,7 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 9 
+    id: 11 
   },{
     name: 'Backpack',
     price: '10,000 ',
@@ -103,6 +103,6 @@ export const productData = [
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id: 9 
+    id: 12 
   }
 ];
