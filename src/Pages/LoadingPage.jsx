@@ -10,7 +10,6 @@ const LoadingPage = (props) => {
             </div>
             <KittDude />
          </div>
-
          <div className="loadPageHeader">
             <h1> Loading Profile... </h1>
          </div>
