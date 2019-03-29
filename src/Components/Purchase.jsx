@@ -9,8 +9,10 @@ const Purchase = (props) => {
 
          <div className="inner">
             <h2> <img src={etherium} alt="etherium" /> {props.product.price} will be deducted from your account</h2>
-            <h4>Do you wish to continue?</h4>
-            <button className="confirm-button">CONFIRM</button>
+            <h3>Do you wish to continue?</h3>
+            <button className="confirm-button"
+               onClick={(e) => props.handlePurchaseConfirm(e)}
+            >CONFIRM</button>
          </div>
 
       </div>

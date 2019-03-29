@@ -63,7 +63,7 @@ body{
 }
 
 
-/* Modal: ProductShow ------------------------------------------ */
+/* Modal Style ------------------------------------------ */
 .Modal {
   position: fixed;
   top: 0;
@@ -88,11 +88,17 @@ body{
   justify-content: center;
   align-items: center;
   background-color: orange;
-  width: 60vw;
-  height: 80vh;
   border-radius: 10px;
   z-index: 999;
   padding: 20px;
+}
+
+
+
+/* Modal: ProductShow ------------------------------------------ */
+.ProductShow .inner {
+  width: 60vw;
+  height: 60vh;
 }
 
 .ProductShow .inner img {
@@ -132,6 +138,12 @@ body{
 .Purchase .inner {
   display: flex;
   flex-direction: column;
+  width: 50vw;
+  height:40vh;
+}
+
+.Purchase h2 {
+  font-size: 1.9rem;
 }
 
 .Purchase .inner img {
@@ -157,6 +169,12 @@ body{
   background-color: rgb(38, 128, 38);
   box-shadow: 0 2px 0 black;
   transform: translateY(2px)
+}
+
+/* Modal: Status -------------------------------------------- */
+.Status .inner {
+  width: 50vw;
+  height: 50vh;
 }
 
 /* Components ----------------------------------------------- */

@@ -2,20 +2,19 @@ import React, { Component } from 'react';
 // import { Route, Link } from 'react-router-dom';
 
 import Money from './Components/Money';
-// import Status from './Components/Status';
 import KittDude from './Components/KittDude';
 
 import Home from './Pages/Home';
 import Search from './Pages/Search';
-import ProductShow from './Pages/ProductShow';
-// import Purchase from './Pages/Purchase';
 
+import ProductShow from './Pages/ProductShow';
+import Purchase from './Components/Purchase';
+import Status from './Components/Status';
 
 import logo from "./images/kitt-logo-2.png"
 import './App.css';
 
 import { productData } from './Data/Products.js';
-import Purchase from './Components/Purchase';
 
 class App extends Component {
   constructor(props) {
@@ -62,7 +61,13 @@ class App extends Component {
     this.setState({
       modal: 'purchase'
     })
+  }
 
+  handlePurchaseConfirm = (e) => {
+    e.stopPropagation()
+    this.setState({
+      modal: 'status'
+    });
   }
 
   render() {
@@ -91,10 +96,13 @@ class App extends Component {
           }
 
           {this.state.modal === 'purchase' &&
-            <Purchase product={this.state.current} handleCloseModal={this.handleCloseModal}></Purchase>
+            <Purchase product={this.state.current} handleCloseModal={this.handleCloseModal}
+              handlePurchaseConfirm={this.handlePurchaseConfirm} />
           }
 
-          {this.state.moda === 'status'}
+          {this.state.modal === 'status' &&
+            <Status handleCloseModal={this.handleCloseModal} />
+          }
 
         </main>
       </div>
