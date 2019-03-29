@@ -1,20 +1,40 @@
 import React from 'react';
 import Card from '../Components/Card';
-import logo from "../images/kitt-logo-2.png" 
 
 const Home = (props) => {
-  let cards = props.products.map((product, i) => {
-    return <Card key={i} product={product} handleShowProduct={() => { props.handleShowProduct(product) }} />;
-  });
+  let feature = props.products.filter((product) => {
+    return product.feature
+  }).map((product, i) => {
+    return <Card key={i} product={product} handleShowProduct={() => { props.handleShowProduct(product) }} />
+  })
+
+  let wishlist = props.products.filter((product) => {
+    return product.wishList
+  }).map((product, i) => {
+    return <Card key={i} product={product} handleShowProduct={() => { props.handleShowProduct(product) }} />
+  })
+
+  let purchased = props.products.filter((product) => {
+    return product.purchaseBefore
+  }).map((product, i) => {
+    return <Card key={i} product={product} handleShowProduct={() => { props.handleShowProduct(product) }} />
+  })
+
+
   return (
     <div className="Home">
-    <img className="KittLogo" src={logo} alt="Kit Logo"></img>
-      <h2>Home</h2>
-        <div className="Feature"> 
-        {cards}
-        </div>
-        <div className="WishList"></div>
-        <div className="PurchaseBefore"></div>
+      <h3>Featured</h3>
+      <div className="feature-collection">
+        {feature}
+      </div>
+      <h3>Wishlist</h3>
+      <div className="wishList-collection">
+        {wishlist}
+      </div>
+      <h3>Purchased Before</h3>
+      <div className="purchaseBefore-collection">
+        {purchased}
+      </div>
     </div>
   )
 };
