@@ -23,6 +23,7 @@ const Home = (props) => {
 
   return (
     <div className="Home">
+
       <h3>Featured</h3>
       <div className="feature-collection">
         {feature}
@@ -35,6 +36,7 @@ const Home = (props) => {
       <div className="purchaseBefore-collection">
         {purchased}
       </div>
+
     </div>
   )
 };

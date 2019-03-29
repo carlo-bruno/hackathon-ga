@@ -177,7 +177,6 @@ body{
   }
 }
 
-
 /* Card Component ------------------------------------------- */
 .Card {
   border: 1px solid black;
@@ -208,4 +207,3 @@ body{
 .Money h3 {
   margin: 0;
 }
-
