@@ -75,10 +75,11 @@ class App extends Component {
     })
   }
 
-  handlePurchaseConfirm = (e) => {
-    e.stopPropagation()
-    this.setState({
-      modal: 'status'
+  handlePurchaseConfirm = (product) => {
+    // e.stopPropagation()
+    this.setState((state) => {
+      let money = state.money - product.price;
+      return { money, modal: 'status' }
     });
   }
 
