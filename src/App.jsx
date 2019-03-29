@@ -94,6 +94,8 @@ class App extends Component {
             <Purchase product={this.state.current} handleCloseModal={this.handleCloseModal}></Purchase>
           }
 
+          {this.state.moda === 'status'}
+
         </main>
       </div>
     );

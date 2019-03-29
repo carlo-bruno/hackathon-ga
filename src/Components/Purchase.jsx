@@ -1,15 +1,18 @@
 import React from "react"
+import etherium from '../images/etherium.png'
 
 const Purchase = (props) => {
 
    return (
       <div className="Purchase Modal">
          <div className="outer" onClick={(e) => props.handleCloseModal(e)}></div>
+
          <div className="inner">
-            <h2> {props.product.price} will be deducted from your account</h2>
+            <h2> <img src={etherium} alt="etherium" /> {props.product.price} will be deducted from your account</h2>
             <h4>Do you wish to continue?</h4>
-            <button>CONFIRM</button>
+            <button className="confirm-button">CONFIRM</button>
          </div>
+
       </div>
    )
 }

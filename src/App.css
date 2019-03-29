@@ -47,17 +47,6 @@ body{
   width: 100%;
 }
 
-.Home .feature-collection,
-.Home .wishList-collection,
-.Home .purchaseBefore-collection {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 /* Search Page ---------------------------------------------- */
 
 .Search {
@@ -74,7 +63,7 @@ body{
 }
 
 
-/* Modal: Purchase ------------------------------------------ */
+/* Modal: ProductShow ------------------------------------------ */
 .Modal {
   position: fixed;
   top: 0;
@@ -139,6 +128,36 @@ body{
   transform: translateY(2px)
 }
 
+/* Modal: Purchase ------------------------------------------ */
+.Purchase .inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.Purchase .inner img {
+  height: 25px;
+}
+
+.Purchase .confirm-button {
+  border: 1px solid black;
+  box-shadow: 0 4px 0 black;
+  border-radius: 5px;
+  background-color: rgb(55, 206, 55);
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.Purchase .confirm-button:hover {
+  background-color: rgb(41, 163, 41);
+}
+
+.Purchase .confirm-button:active {
+  background-color: rgb(38, 128, 38);
+  box-shadow: 0 2px 0 black;
+  transform: translateY(2px)
+}
 
 /* Components ----------------------------------------------- */
 /* KittDude ------------------------------------------------- */
@@ -220,6 +239,13 @@ body{
   width: 150px;
   padding: 5px 10px;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Money img {
+  height: 25px;
 }
 
 .Money h3 {
