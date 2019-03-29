@@ -52,7 +52,9 @@ class App extends Component {
         </header>
 
         <main className='Content'>
+
           {content}
+
         </main>
       </div>
     );

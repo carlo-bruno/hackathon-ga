@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Card{
+  display: flex;
+  border: 3px dotted black;
+  width: 30%; 
+}
+
+
