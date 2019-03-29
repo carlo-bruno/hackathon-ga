@@ -6,10 +6,9 @@ export const productData = [
     feature: false,
     purchaseBefore: false,
     wishList: false,
-    rating:"",
     id: 1,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     name: 'Tesla Battery',
@@ -18,10 +17,9 @@ export const productData = [
     feature: true,
     purchaseBefore: true,
     wishList: false,
-    rating:"",
     id: 2,
     rating: 3,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Underwater Scooter',
@@ -32,7 +30,7 @@ export const productData = [
     wishList: true,
     id: 3,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Mother-in-law board',
@@ -43,7 +41,7 @@ export const productData = [
     wishList: false,
     id: 4,
     rating: 1,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Hawaiian Vinyl Wrap',
@@ -54,7 +52,7 @@ export const productData = [
     wishList: false,
     id: 5,
     rating: 3,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Chrome Vinyl Wrap',
@@ -65,7 +63,7 @@ export const productData = [
     wishList: false,
     id: 6,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Laser speargun',
@@ -76,7 +74,7 @@ export const productData = [
     wishList: true,
     id: 7,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     name: 'Robocalls',
@@ -87,7 +85,7 @@ export const productData = [
     wishList: true,
     id: 8,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     name: '3D Printer',
     price: '3000',
@@ -95,10 +93,10 @@ export const productData = [
     feature: true,
     purchaseBefore: true,
     wishList: false,
-    id: 9, 
+    id: 9,
     rating: 3,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  },{
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
     name: 'First Aid Kit',
     price: '3000',
     img: 'https://i.ibb.co/T45mXS8/first-aid-kit.jpg',
@@ -106,9 +104,9 @@ export const productData = [
     purchaseBefore: false,
     wishList: false,
     id: 10,
-    rating: 4 ,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  },{
+    rating: 4,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
     name: 'Primer',
     price: '800',
     img: 'https://www.cartalk.com/sites/default/files/Blazer%20Rustoleum%20Rusty%20Metal%20primer.jpg',
@@ -149,9 +147,9 @@ export const productData = [
     wishList: false,
     id: 14,
     rating: 3,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    size:"Small, Medium, Large" 
-  },{
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size: "Small, Medium, Large"
+  }, {
     name: 'Waterproof Suit Mark IV',
     price: "200000",
     img: 'https://images.ecosia.org/lkcPrXjSukiaq_uMzPvQ24EpASU=/0x390/smart/https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2F27%2Fe6%2Fb1%2F27e6b10748269bb1d07433bb6b911fa1.jpg',
@@ -182,9 +180,9 @@ export const productData = [
     wishList: false,
     id: 17,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    size:"Small, Medium, Large" 
-  },{
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size: "Small, Medium, Large"
+  }, {
     name: 'Backpack',
     price: '10000 ',
     img: 'http://www.tuvie.com/wp-content/uploads/mountain-climber-shield-futuristic-protection1.jpg',
@@ -193,82 +191,82 @@ export const productData = [
     wishList: false,
     id: 18,
     rating: 2,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    size:"Small, Medium, Large"  
-  },{
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    size: "Small, Medium, Large"
+  }, {
     name: 'Home Decoration - Sculpture',
     price: '24500',
     img: 'https://www.artsandcollections.com/wp-content/uploads/2019/02/AIDAN_MELLER_WIP-3-copy-1280x1917.jpg',
     feature: true,
     purchaseBefore: true,
     wishList: false,
-    id:19, 
+    id: 19,
     rating: 3,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
- 
-  },{
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  }, {
     name: 'Stationary tool',
     price: '34000 ',
     img: ' https://totemmaker.net/wp-content/uploads/2018/02/Robotic-arm-1x1.jpg',
     feature: false,
     purchaseBefore: false,
     wishList: true,
-    id:20, 
+    id: 20,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-  },{
+  }, {
     name: 'Vacuum',
     price: '10400',
     img: 'https://images-na.ssl-images-amazon.com/images/I/810SWbINX0L._SX425_.jpg',
     feature: true,
     purchaseBefore: true,
     wishList: false,
-    id:21, 
+    id: 21,
     rating: 3,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },{
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  }, {
     name: 'Rainbow Laser Blaster',
     price: ' 26000',
     img: 'https://t5.rbxcdn.com/138c432763a0dd9121951b0a021d2094',
     feature: true,
     purchaseBefore: false,
     wishList: false,
-    id:22, 
+    id: 22,
     rating: 2,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-  },{
+  }, {
     name: 'External Battery',
     price: '1000',
     img: 'https://ae01.alicdn.com/kf/HTB184wNfMvD8KJjy0Flq6ygBFXae/20100mAh-Power-Bank-External-Battery-Charger-Mobile-Phone-Battery-Charger-with-Dual-USB-LCD-Flashlight-for.jpg',
     feature: false,
     purchaseBefore: false,
     wishList: true,
-    id:22, 
+    id: 22,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-  },{
+  }, {
     name: 'Juul',
     price: '700',
     img: 'https://i1.wp.com/vape-smart.com/wp-content/uploads/2016/08/JUUL-eCig.jpg?fit=600%2C600&ssl=1',
     feature: false,
     purchaseBefore: true,
     wishList: false,
-    id:22, 
+    id: 22,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-  },{
+  }, {
     name: 'Juul Pods - Fruit Medley ',
     price: '350',
     img: 'https://products2.imgix.drizly.com/ci-juul-fruit-mediey-pods-4766b31cdba3a768.jpeg?auto=format%2Ccompress&fm=jpeg&q=20',
     feature: false,
     purchaseBefore: true,
     wishList: false,
-    id:22, 
+    id: 22,
     rating: 4,
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   }
 ];
