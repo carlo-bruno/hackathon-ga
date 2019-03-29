@@ -62,8 +62,8 @@ class App extends Component {
     return (
       <div className='App'>
         <header>
-          <h1>KITT</h1>
-          <input type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
+          {/* <h1>KITT</h1> */}
+          <input className="SearchBox" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
         </header>
 
         <main className='Content'>
