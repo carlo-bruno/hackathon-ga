@@ -20,13 +20,14 @@ class App extends Component {
     this.state = {
       products: productData,
       money: 50000,
-      searchResults: []
+      searchResults: [],
+      current: {}
     };
   }
 
   handleSearch = (e) => {
     e.preventDefault();
-    let query = e.target.value;
+    let query = e.target.value.toLowerCase();
     if (query) {
       this.setState((state, props) => {
         let searchResults = state.products.filter(product => product.name.toLowerCase().includes(query));
@@ -37,8 +38,14 @@ class App extends Component {
     }
   }
 
+  handleShowProduct = (product) => {
+    this.setState({
+      current: product
+    })
+  }
+
   render() {
-    let content = <Home products={this.state.products} />;
+    let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
 
     if (this.state.searchResults.length > 0) {
       content = <Search searchResults={this.state.searchResults} />
