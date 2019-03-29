@@ -26,7 +26,7 @@ class App extends Component {
       searchResults: [],
       current: {},
       modal: 'none',
-      loading: true,
+      loading: false, /*change this on deploy */
     };
   }
 
@@ -68,7 +68,6 @@ class App extends Component {
   }
 
 
-
   handlePurchaseButton = (e) => {
     e.stopPropagation();
     this.setState({
@@ -84,17 +83,9 @@ class App extends Component {
   }
 
   render() {
-
-    // if (this.state.loading){
-    //   return(
-    //     <LoadingPage  />
-    //     )
-    //   } else {
-    // all other components 
-    //   }
     let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
     if (this.state.searchResults.length > 0) {
-      content = <Search searchResults={this.state.searchResults} />
+      content = <Search searchResults={this.state.searchResults} handleShowProduct={this.handleShowProduct} />
     }
 
     return (
@@ -107,7 +98,10 @@ class App extends Component {
 
         <main className='Content'>
           {/* <KittDude /> */}
-          {/* <LoadingPage /> */}
+
+          {this.state.loading &&
+            <LoadingPage />
+          }
 
           {content}
 

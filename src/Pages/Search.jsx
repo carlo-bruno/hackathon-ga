@@ -3,7 +3,7 @@ import Card from '../Components/Card';
 
 const Search = (props) => {
   let cards = props.searchResults.map((product, i) => {
-    return <Card key={i} product={product} />;
+    return <Card key={i} product={product} handleShowProduct={() => { props.handleShowProduct(product) }} />;
   });
   return (
     <div className="Search">
