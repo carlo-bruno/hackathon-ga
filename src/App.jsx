@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+// import { Route, Link } from 'react-router-dom';
 
 import Money from './Components/Money';
 // import Status from './Components/Status';
+import KittDude from './Components/KittDude';
+
+
+import LoadingPage from "./Pages/LoadingPage"; 
+import Home from './Pages/Home';
+import Search from './Pages/Search';
 import ProductShow from './Pages/ProductShow';
 // import Purchase from './Pages/Purchase';
-import Search from './Pages/Search';
 
 
-import { Route, Link } from 'react-router-dom';
-import Home from './Pages/Home';
-
+import logo from "./images/kitt-logo-2.png"
 import './App.css';
 
 import { productData } from './Data/Products.js';
@@ -19,10 +23,20 @@ class App extends Component {
     super(props);
     this.state = {
       products: productData,
-      money: 50000,
+      money: 5000000,
       searchResults: [],
-      current: {}
+      current: {},
+      modal: 'none',
+      loading: true, 
     };
+  }
+  
+  componentDidMount(){
+    console.log("this is running")
+    setTimeout(() => {
+      this.setState({
+        loading:false
+      })}, 4000 )
   }
 
   handleSearch = (e) => {
@@ -40,39 +54,52 @@ class App extends Component {
 
   handleShowProduct = (product) => {
     this.setState({
-      current: product
+      current: product,
+      modal: 'showProduct'
     })
   }
 
-  handleCloseProduct = () => {
+  handleCloseProduct = (e) => {
+    e.stopPropagation()
     this.setState({
       current: {},
-      showing: 'home'
+      modal: 'none'
     })
   }
+ 
+
 
   render() {
-    let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
 
+ // if (this.state.loading){
+    //   return(
+    //     <LoadingPage  />
+    //     )
+    //   } else {
+      // all other components 
+    //   }
+    let content = <Home products={this.state.products} handleShowProduct={this.handleShowProduct} />;
     if (this.state.searchResults.length > 0) {
       content = <Search searchResults={this.state.searchResults} />
     }
 
-
     return (
       <div className='App'>
-        <header>
-          {/* <h1>KITT</h1> */}
-          <input className="SearchBox" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
+        <header className="Header">
+          <img className="kitt-logo" src={logo} alt="Kit Logo"></img>
+          <input className="search" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
+          <Money money={this.state.money} />
         </header>
 
         <main className='Content'>
+          <KittDude></KittDude>
 
           {content}
 
-          {this.state.current &&
-            <ProductShow product={this.state.current} />
+          {this.state.modal === "showProduct" &&
+            <ProductShow product={this.state.current} handleCloseProduct={this.handleCloseProduct} />
           }
+
         </main>
       </div>
     );
@@ -80,3 +107,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+
