@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import etherium from './images/etherium.png' 
 // import { Route, Link } from 'react-router-dom';
 
 import Money from './Components/Money';
@@ -26,7 +27,7 @@ class App extends Component {
       searchResults: [],
       current: {},
       modal: 'none',
-      loading: true, /*change this on deploy */
+      loading: false, /*change this on deploy */
     };
   }
 
@@ -108,6 +109,7 @@ class App extends Component {
 
           {this.state.modal === "showProduct" &&
             <ProductShow product={this.state.current} handleCloseModal={this.handleCloseModal}
+              
               handlePurchaseButton={this.handlePurchaseButton} />
           }
 
