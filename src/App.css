@@ -177,6 +177,24 @@ body{
   }
 }
 
+/* Carousel Component --------------------------------------- */
+.Carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Carousel .collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* Card Component ------------------------------------------- */
 .Card {
   border: 1px solid black;
