@@ -19,7 +19,7 @@ const Home = (props) => {
 
   return (
     <div className="Home">
-      <h4> Welcome Elon M </h4>
+      <h4> Welcome e-Lon </h4>
       <div>
         <h2>Featured</h2>
         <Carousel products={feature} handleShowProduct={props.handleShowProduct} />

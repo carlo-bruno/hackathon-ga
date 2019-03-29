@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import drone from '../images/drone.jpg'
 class Status extends Component {
   constructor(props) {
     super(props)
@@ -20,8 +20,11 @@ class Status extends Component {
         <div className="outer" onClick={(e) => this.props.handleCloseModal(e)}></div>
 
         <div className="inner">
+          <div className="droneBox">
+            <img className="droneImage" src={drone} alt="etherium" />
+          </div>
           <div className="close" onClick={(e) => this.props.handleCloseModal(e)}>X</div>
-          <h1> Your Item should arive within {this.state.time} seconds on Drone {droneId} </h1>
+            <h1> Your Item should arrive within {this.state.time} seconds on Drone {droneId} </h1>
           {/* <button onClick={(e) => this.props.handleCloseModal(e)}> OK </button> */}
         </div>
       </div>
