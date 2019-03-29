@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+// import { Route, Link } from 'react-router-dom';
 
 import Money from './Components/Money';
 // import Status from './Components/Status';
+import KittDude from './Components/KittDude';
+
+import Home from './Pages/Home';
+import Search from './Pages/Search';
 import ProductShow from './Pages/ProductShow';
 // import Purchase from './Pages/Purchase';
-import Search from './Pages/Search';
+
+
 import logo from "./images/kitt-logo-2.png"
-
-
-// import { Route, Link } from 'react-router-dom';
-import Home from './Pages/Home';
-
 import './App.css';
 
 import { productData } from './Data/Products.js';
@@ -71,6 +72,7 @@ class App extends Component {
         </header>
 
         <main className='Content'>
+          <KittDude></KittDude>
 
           {content}
 
