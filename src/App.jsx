@@ -15,6 +15,7 @@ import logo from "./images/kitt-logo-2.png"
 import './App.css';
 
 import { productData } from './Data/Products.js';
+import Purchase from './Components/Purchase';
 
 class App extends Component {
   constructor(props) {
@@ -48,12 +49,20 @@ class App extends Component {
     })
   }
 
-  handleCloseProduct = (e) => {
+  handleCloseModal = (e) => {
     e.stopPropagation()
     this.setState({
       current: {},
       modal: 'none'
     })
+  }
+
+  handlePurchaseButton = (e) => {
+    e.stopPropagation();
+    this.setState({
+      modal: 'purchase'
+    })
+
   }
 
   render() {
@@ -77,7 +86,12 @@ class App extends Component {
           {content}
 
           {this.state.modal === "showProduct" &&
-            <ProductShow product={this.state.current} handleCloseProduct={this.handleCloseProduct} />
+            <ProductShow product={this.state.current} handleCloseModal={this.handleCloseModal}
+              handlePurchaseButton={this.handlePurchaseButton} />
+          }
+
+          {this.state.modal === 'purchase' &&
+            <Purchase product={this.state.current} handleCloseModal={this.handleCloseModal}></Purchase>
           }
 
         </main>

@@ -75,7 +75,7 @@ body{
 
 
 /* Modal: Purchase ------------------------------------------ */
-.ProductShow {
+.Modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -88,13 +88,13 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.ProductShow .outer {
+.Modal .outer {
   width: 100vw;
   height: 100vh;
   position: absolute;
 }
 
-.ProductShow .inner {
+.Modal .inner {
   display: flex;
   justify-content: center;
   align-items: center;
