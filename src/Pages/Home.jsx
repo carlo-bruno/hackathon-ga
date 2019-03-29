@@ -1,4 +1,5 @@
 import React from 'react';
+import etherium from '../images/etherium.png' 
 import Carousel from '../Components/Carousel';
 // import HelloEllon from "../Components/HelloEllon"
 
