@@ -45,6 +45,7 @@ class Carousel extends Component {
         <div className="collection">
           {cards}
         </div>
+
         <div className="carousel-buttons">
           {page !== 0 &&
             <button onClick={() => this.pageDown()}>&larr;</button>
