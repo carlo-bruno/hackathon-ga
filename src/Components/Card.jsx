@@ -5,7 +5,7 @@ const Card = (props) => {
     <div className='Card'>
       <div className="imageBox">
       <img className="CardContent"
-        src='http://via.placeholder.com/200x200'
+        src={props.product.img}
         alt={props.product.name}
       />
       </div>
