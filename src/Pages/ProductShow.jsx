@@ -1,39 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 
-class ProductShow extends Component {
-  constructor(props) {
-    super(props)
+const ProductShow = (props) => {
+  let { name, price, img } = props.product;
 
-    this.state = {
-      visible: false
-    }
-  }
+  return (
+    <div className="ProductShow" >
 
+      <div className="outer" onClick={(e) => props.handleCloseProduct(e)}></div>
 
-  render() {
-    let { name, price, img } = this.props.product;
+      <section className="inner">
+        <div className="image-box">
+          <img src={img} alt={name} />
+        </div>
 
-    return (
-      <div className="ProductShow" >
+        <div className="info-box">
+          <h2>{name}</h2>
+          <h2>$ {price}</h2>
+          <p>Rating: ****</p>
+          <button className="purchase-btn">Purchase</button>
+        </div>
+      </section>
 
-        <div className="outer" onClick={(e) => this.props.handleCloseProduct(e)}></div>
-
-        <section className="inner">
-          <div className="image-box">
-            <img src={img} alt={name} />
-          </div>
-
-          <div className="info-box">
-            <h3>{name}</h3>
-            <h3>{price}</h3>
-
-            <button>Purchase</button>
-          </div>
-        </section>
-
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default ProductShow; 

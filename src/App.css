@@ -96,22 +96,52 @@ body{
 
 .ProductShow .inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: orange;
   width: 60vw;
   height: 80vh;
   border-radius: 10px;
   z-index: 999;
+  padding: 20px;
 }
 
 .ProductShow .inner img {
-  width: 400px;
+  width: 500px;
 }
+
+.ProductShow .info-box {
+  height: 60%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProductShow .purchase-btn {
+  border: 1px solid black;
+  box-shadow: 0 4px 0 black;
+  border-radius: 5px;
+  background-color: #FFF200;
+  padding: 10px;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.ProductShow .purchase-btn:hover {
+  background-color: #e6da00;
+}
+
+.ProductShow .purchase-btn:active {
+  background-color: #c4ba00;
+  box-shadow: 0 2px 0 black;
+  transform: translateY(2px)
+}
+
 
 /* Components ----------------------------------------------- */
 /* Card Component ------------------------------------------- */
-
 .Card {
   border: 1px solid black;
   border-radius: 10px;
@@ -129,7 +159,16 @@ body{
   max-height: 150px;
 }
 
-.Card {
-  text-align: center;
+/* Money Component ------------------------------------------ */
+.Money {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 150px;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+.Money h3 {
+  margin: 0;
 }
 

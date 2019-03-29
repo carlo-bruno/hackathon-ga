@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Money = (props) => {
-
-   
-   return(
-      <div>
-         <p> $100.00 </p>
+   let money = props.money.toLocaleString();
+   return (
+      <div className="Money">
+         <h3>{money}</h3>
       </div>
    )
 }

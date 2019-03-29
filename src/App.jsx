@@ -20,7 +20,7 @@ class App extends Component {
     super(props);
     this.state = {
       products: productData,
-      money: 50000,
+      money: 5000000,
       searchResults: [],
       current: {},
       modal: 'none'
@@ -62,13 +62,12 @@ class App extends Component {
       content = <Search searchResults={this.state.searchResults} />
     }
 
-
     return (
       <div className='App'>
         <header className="Header">
           <img className="kitt-logo" src={logo} alt="Kit Logo"></img>
           <input className="search" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
-          <Money />
+          <Money money={this.state.money} />
         </header>
 
         <main className='Content'>
