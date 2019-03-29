@@ -248,6 +248,41 @@ body{
 .Status .inner {
   width: 50vw;
   height: 50vh;
+  flex-direction: column;
+}
+
+.droneImage{
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 10em;
+  height: 10em;
+  display: block;
+	top: 0;
+  
+  x-transition: all 10s ease-in-out;
+  animation: ani 5s infinite;
+}
+
+.droneBox{
+  position: relative;
+  overflow: show;
+  width: 600px;
+  height: 5.5em;
+  background-color: white;
+  margin: auto;
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  60% {
+    left: 450px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 /* Components ----------------------------------------------- */
@@ -410,11 +445,10 @@ body{
   100% { -webkit-transform: rotate(360deg); }
 }
 
-
-
 .homeMoneyProduct{
   display: relative; 
   width: 1em; 
   height: 1em;
   bottom: 5em; 
 }
+
