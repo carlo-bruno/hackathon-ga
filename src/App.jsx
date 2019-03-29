@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Money from './Components/Money';
-import Status from './Components/Status';
+// import Status from './Components/Status';
 import ProductShow from './Pages/ProductShow';
 // import Purchase from './Pages/Purchase';
 import Search from './Pages/Search';
@@ -20,23 +20,29 @@ class App extends Component {
     this.state = {
       products: productData,
       money: 50000,
-      query: '',
       searchResults: []
     };
   }
 
   handleSearch = (e) => {
-    let query = e.target.value.toLowerCase();
-    this.setState((state, props) => {
-      let searchResults = state.products.filter(product => product.name.toLowerCase().includes(query));
-      return { searchResults }
-    })
+    e.preventDefault();
+    let query = e.target.value;
+    if (query) {
+      this.setState((state, props) => {
+        let searchResults = state.products.filter(product => product.name.toLowerCase().includes(query));
+        return { searchResults }
+      })
+    } else {
+      this.setState({ searchResults: [] })
+    }
   }
 
-
   render() {
+    let content = <Home products={this.state.products} />;
 
-
+    if (this.state.searchResults.length > 0) {
+      content = <Search searchResults={this.state.searchResults} />
+    }
 
     return (
       <div className='App'>
@@ -46,10 +52,9 @@ class App extends Component {
         </header>
 
         <main className='Content'>
-          <Route exact path='/'
-            render={() => <Home products={this.state.products} />}
-          />
-          
+
+          {content}
+
         </main>
       </div>
     );
