@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../Components/Carousel';
+// import HelloEllon from "../Components/HelloEllon"
 
 const Home = (props) => {
   let feature = props.products.filter((product) => {
@@ -17,7 +18,7 @@ const Home = (props) => {
 
   return (
     <div className="Home">
-
+      <h4> Welcome Elon M </h4>
       <div>
         <h2>Featured</h2>
         <Carousel products={feature} handleShowProduct={props.handleShowProduct} />

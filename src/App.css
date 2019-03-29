@@ -254,19 +254,21 @@ body{
 .Money {
   border: 3px solid black;
   border-radius: 5px;
-  width: 150px;
+  width: 200px;
   padding: 5px 10px;
   text-align: right;
   display: flex;
   justify-content: space-between;
-
 }
+
+
 
 .Money img {
   height: 25px;
+  text-align: center;
 }
 
-.Money h3 {
+.Money h3 h2 {
   margin: 0;
 }
 
