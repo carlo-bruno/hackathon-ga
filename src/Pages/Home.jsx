@@ -24,10 +24,10 @@ const Home = (props) => {
         <Carousel products={feature} handleShowProduct={props.handleShowProduct} />
       </div>
 
-      <h3>Wishlist</h3>
+      <h2>Wishlist</h2>
       <Carousel products={wishlist} handleShowProduct={props.handleShowProduct} />
 
-      <h3>Purchased Before</h3>
+      <h2>Purchased Before</h2>
       <Carousel products={purchased} handleShowProduct={props.handleShowProduct} />
 
 

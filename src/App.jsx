@@ -97,7 +97,7 @@ class App extends Component {
           <input className="search" type='text' placeholder='search' onChange={e => this.handleSearch(e)} />
           <Money money={this.state.money} />
         </header>
-        <h4 className="welcome"> Welcome Elon M </h4>
+        <h4 className="welcome"> Welcome e-LON </h4>
 
         <main className='Content'>
           {/* <KittDude /> */}

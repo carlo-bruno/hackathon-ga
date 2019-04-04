@@ -251,10 +251,13 @@ body{
   flex-direction: column;
 }
 
+.Status .inner h1 {
+  width: 80%;
+}
+
 .droneImage{
   position: absolute;
   left: 0;
-  background-color: red;
   width: 10em;
   height: 10em;
   display: block;
